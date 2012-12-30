@@ -4,3 +4,7 @@ This Project is based on kernelhcy's gtkqq project, i rewrite the qq
 library to impove its stability
 cscope.out .. is not need
  copy libghttp.so.0 and liblwqq.so.0 to /usr/lib
+ 
+#
+# NOTE: rewrite the http message use libcurl FIXME
+#
