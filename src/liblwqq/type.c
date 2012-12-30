@@ -28,6 +28,10 @@ LwqqClient *lwqq_client_new(const char *username, const char *password)
     struct timeval tv;
     long v;
 
+    /*
+     *  the username can be email address?
+     *  add by szqh97 2012-12-29 19:01:25
+     */
     if (!username || !password) {
         lwqq_log(LOG_ERROR, "Username or password is null\n");
         return NULL;

@@ -294,9 +294,15 @@ done:
     lwqq_client_free(lc);
 }
 
+/*
+ * param 1 is qq number, param 2 is qq password
+ * add by szqh97 2012-12-29 18:23:09
+ */
+
 int main(int argc, char *argv[])
 {
     if (argc != 3) {
+        lwqq_log(LOG_ERROR, "Usage: ./testlogin 111111 xxxxxx\n");
         return -1;
     }
     test_login(argv[1], argv[2]);

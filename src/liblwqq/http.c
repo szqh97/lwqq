@@ -338,6 +338,8 @@ LwqqHttpRequest *lwqq_http_create_default_request(const char *url,
                                                   LwqqErrorCode *err)
 {
     LwqqHttpRequest *req;
+    /* add by szqh97 2012-12-29 22:01:22 */
+    lwqq_log(LOG_DEBUG, "the url is %s\n", url);
     
     if (!url) {
         if (err)

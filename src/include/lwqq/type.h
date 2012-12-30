@@ -61,6 +61,10 @@ typedef struct LwqqBuddy {
      * 21: Mobile client
      * 41: Web QQ Client
      */
+    /*
+     * what is IPhone QQ ? Can test to get the value
+     * add by szqh97 2012-12-29 21:32:13
+     */
     char *client_type;
 
     char *status;               /* Online status */
