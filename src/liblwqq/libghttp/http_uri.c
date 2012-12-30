@@ -192,7 +192,8 @@ http_uri_new(void)
   l_return->full = NULL;
   l_return->proto = NULL;
   l_return->host = NULL;
-  l_return->port = 80;
+  //l_return->port = 80;
+  l_return->port = HTTP_PORT;
   l_return->resource = NULL;
   return l_return;
 }

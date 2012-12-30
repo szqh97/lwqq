@@ -23,6 +23,7 @@
 #define HTTP_URI_H
 
 /* strings that are used all over the place */
+#define HTTP_PORT 80
 
 typedef struct http_uri_tag
 {
