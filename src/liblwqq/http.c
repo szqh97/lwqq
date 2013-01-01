@@ -237,7 +237,7 @@ static int lwqq_http_do_request(LwqqHttpRequest *request, int method, char *body
         *resp = NULL;
     }
 
-    /* Set http method */
+    /* Set http method GET(0) */
     if (method == 0) {
         m = ghttp_type_get;
     } else if (method == 1) {

@@ -25,6 +25,8 @@
 #include "http_trans.h"
 #include "http_global.h"
 
+#define HTTP_VERSION 1.1
+
 const char *
 http_req_type_char[] = {
   "GET",
@@ -53,7 +55,8 @@ http_req_new(void)
   l_return = (http_req *)malloc(sizeof(http_req));
   memset(l_return, 0, sizeof(http_req));
   /* default to 1.1 */
-  l_return->http_ver = 1.1;
+  /* l_return->http_ver = 1.1; */
+  l_return->http_ver = HTTP_VERSION;
   l_return->headers = http_hdr_list_new();
   return l_return;
 }

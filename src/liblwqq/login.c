@@ -535,6 +535,7 @@ static void get_version(LwqqClient *lc, LwqqErrorCode *err)
 
     /* Send request */
     lwqq_log(LOG_DEBUG, "Get webqq version from %s\n", LWQQ_URL_VERSION);
+    /* send requet in this method lwqq_http_dorequest(LwqqHttpRequest *request, int method, char *body) */
     ret = req->do_request(req, 0, NULL);
     if (ret) {
         *err = LWQQ_EC_NETWORK_ERROR;
