@@ -52,7 +52,7 @@ LwqqClient *lwqq_client_new(const char *username, const char *password)
     lc->msg_list = lwqq_recvmsg_new(lc);
 
     /* Set msg_id */
-    gettimeofday(&tv, NULL);
+    gettimeofday(&tv, NULL); // this api is deserted by linux ,change it
     v = tv.tv_usec;
     v = (v - v % 1000) / 1000;
     v = v % 10000 * 10000;

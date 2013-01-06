@@ -271,6 +271,7 @@ void lwqq_info_get_friends_info(LwqqClient *lc, LwqqErrorCode *err)
     if (!req) {
         goto done;
     }
+    /* the url v=2010025002 is ?add by szqh97 2013-01-06 20:29:26 */
     req->set_header(req, "Referer", "http://s.web2.qq.com/proxy.html?v=20101025002");
     req->set_header(req, "Content-Transfer-Encoding", "binary");
     req->set_header(req, "Content-type", "application/x-www-form-urlencoded");
